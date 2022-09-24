@@ -25,6 +25,7 @@
                     colors: {
                         clifford: '#da373d',
                         discription: 'hsla(0,0%,100%,.5)',
+                        discription2: 'rgba(0,0,0,.5)',
                         golden: '#ad9970',
                     },
                     backgroundImage: {
@@ -54,8 +55,8 @@
         </div>
     </nav>
     <hr>
-    <nav class="my-2 lg:my-5 w-10/12 max-w-6xl mx-auto flex flex-col justify-around items-center">
-        <div class="w-full flex justify-between items-center">
+    <nav class="mx-auto flex flex-col justify-around items-center sticky top-0 z-50 bg-white">
+        <div class="my-2 lg:my-5  w-10/12 max-w-6xl flex justify-between items-center">
             <img class="w-[86px] h-6" src="./images/RODE_Logo_87x51_RGB.svg" alt="rode logo">
             <ul class="hidden lg:flex text-sm font-normal">
                 <li class="py-2 px-6">PRODUCTS</li>
@@ -86,9 +87,11 @@
                         podcasters, musicians, and creators. Take your content to the next level.</p>
                 </div>
                 <div class="flex items-center justify-center my-4 gap-2">
-                    <div class="text-golden font-semibold">Learn More <i class="fa fa-angle-right"
+                    <div class="text-golden font-semibold cursor-pointer">Learn More <i class="fa fa-angle-right"
                             aria-hidden="true"></i></div>
-                    <div class="px-6 py-1.5 text-white font-semibold bg-golden rounded-full">BUY NOW</div>
+                    <div
+                        class="px-6 py-1.5 text-white cursor-pointer hover:text-golden font-semibold bg-golden hover:bg-white rounded-full">
+                        BUY NOW</div>
                 </div>
             </div>
         </div>
@@ -96,7 +99,26 @@
 
     <!-- Section 2 -->
     <section class="">
-
+        <div class="flex items-center bg-none py-4 lg:bg-bgtwo lg:h-[700px] bg-cover bg-center">
+            <div class="text-center lg:max-w-xl lg:ml-24">
+                <img class="px-2" src="./images/banner-2-image.svg">
+                <div class="p-8">
+                    <h4 class="text-black text-2xl mb-2 px-2 font-medium">Your Search For The Perfect Headphones Is Over
+                    </h4>
+                    <p class="text-discription2 px-4">Experience sound like never before with the NTH-100s. Exceptional
+                        sonic
+                        performance, superior comfort and iconic looks that inspires creativity.</p>
+                </div>
+                <div class="flex items-center justify-center my-4 gap-2">
+                    <div class="text-golden font-semibold cursor-pointer">Learn More <i class="fa fa-angle-right"
+                            aria-hidden="true"></i>
+                    </div>
+                    <div
+                        class="px-6 py-1.5 text-white hover:text-golden cursor-pointer font-semibold bg-golden hover:bg-white rounded-full">
+                        BUY NOW</div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Section 3 -->
     <!-- Section 4 -->
