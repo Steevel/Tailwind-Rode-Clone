@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -18,14 +24,16 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        discription: 'hsla(0,0%,100%,.5)',
+                        golden: '#ad9970',
                     },
                     backgroundImage: {
                         'bgone': "url('./images/background-1.jpg')",
-                        'bgtwo': "url('./images/')",
-                        'bgthree': "url('./images/')",
-                        'bgfour': "url('./images/')",
-                        'bgfive': "url('./images/')",
-                        'bgsix': "url('./images/')",
+                        'bgtwo': "url('./images/background-2.jpg')",
+                        'bgthree': "url('./images/background-3.jpg')",
+                        'bgfour': "url('./images/background-4.jpg')",
+                        'bgfive': "url('./images/background-5.jpg')",
+                        'bgsix': "url('./images/background-6.jpg')",
                     }
                 }
             }
@@ -36,7 +44,7 @@
 
 <body>
     <!-- Navbar  -->
-    <nav class=" w-10/12 max-w-6xl mx-auto flex flex-col justify-around items-center">
+    <nav class=" w-10/12 max-w-6xl mx-auto hidden lg:flex flex-col justify-around items-center">
         <div class="w-full flex justify-between items-center">
             <div class="flex gap-1">
                 <img src="./images/location.svg" alt="location">
@@ -46,10 +54,10 @@
         </div>
     </nav>
     <hr>
-    <nav class="my-5 w-10/12 max-w-6xl mx-auto flex flex-col justify-around items-center">
+    <nav class="my-2 lg:my-5 w-10/12 max-w-6xl mx-auto flex flex-col justify-around items-center">
         <div class="w-full flex justify-between items-center">
             <img class="w-[86px] h-6" src="./images/RODE_Logo_87x51_RGB.svg" alt="rode logo">
-            <ul class="hidden md:flex text-sm font-normal">
+            <ul class="hidden lg:flex text-sm font-normal">
                 <li class="py-2 px-6">PRODUCTS</li>
                 <li class="py-2 px-6">USER GUIDES</li>
                 <li class="py-2 px-6">SOLUTIONS</li>
@@ -62,27 +70,34 @@
     </nav>
 
     <!-- Section 1 -->
-    <section class="bg-bgone bg-black">
-        <div class="container mr-12 h-auto lg:h-[700px] w-full">
-            <div class="w-2/4">
-                <div>
-                    <img src="./images/banner-1-image.svg">
-                </div>
-                <div>
-                    <h4>The Revolution Is Here</h4>
-                    <p>The RØDECaster Pro II is the world's most powerful all-in-one audio solution for streamers,
+    <section class="bg-black">
+        <!-- <--bg-bgone bg-left bg-black!-->
+        <div
+            class="flex flex-col lg:flex-row items-center justify-around h-auto bg-none lg:bg-bgone lg:h-[700px] bg-cover bg-center ">
+            <div class="">
+                <img class="lg:hidden md:block" src="./images/section one tab.jpg">
+            </div>
+            <div class="text-center lg:max-w-xl lg:ml-24">
+                <img class="px-2" src="./images/banner-1-image.svg">
+                <div class="p-8">
+                    <h4 class="text-white text-2xl mb-2">The Revolution Is Here</h4>
+                    <p class="text-discription">The RØDECaster Pro II is the world's most powerful all-in-one audio
+                        solution for streamers,
                         podcasters, musicians, and creators. Take your content to the next level.</p>
                 </div>
-                <div>
-                    <div>Learn More</div>
-                    <div>BUY NOW</div>
+                <div class="flex items-center justify-center my-4 gap-2">
+                    <div class="text-golden font-semibold">Learn More <i class="fa fa-angle-right"
+                            aria-hidden="true"></i></div>
+                    <div class="px-6 py-1.5 text-white font-semibold bg-golden rounded-full">BUY NOW</div>
                 </div>
             </div>
         </div>
     </section>
 
-
     <!-- Section 2 -->
+    <section class="">
+
+    </section>
     <!-- Section 3 -->
     <!-- Section 4 -->
     <!-- Section 5 -->
