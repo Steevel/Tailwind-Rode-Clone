@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: '480px',
+                    md: '768px',
+                    lg: '976px',
+                    xl: '1440px',
+                },
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    backgroundImage: {
+                        'bgone': "url('./images/background-1.jpg')",
+                        'bgtwo': "url('./images/')",
+                        'bgthree': "url('./images/')",
+                        'bgfour': "url('./images/')",
+                        'bgfive': "url('./images/')",
+                        'bgsix': "url('./images/')",
+                    }
+                }
+            }
+        }
+    </script>
+    <title>RØDE Microphones</title>
+</head>
+
+<body>
+    <!-- Navbar  -->
+    <nav class=" w-10/12 max-w-6xl mx-auto flex flex-col justify-around items-center">
+        <div class="w-full flex justify-between items-center">
+            <div class="flex gap-1">
+                <img src="./images/location.svg" alt="location">
+                <p>EN</p>
+            </div>
+            <img src="./images/profile.svg" alt="profile">
+        </div>
+    </nav>
+    <hr>
+    <nav class="my-5 w-10/12 max-w-6xl mx-auto flex flex-col justify-around items-center">
+        <div class="w-full flex justify-between items-center">
+            <img class="w-[86px] h-6" src="./images/RODE_Logo_87x51_RGB.svg" alt="rode logo">
+            <ul class="hidden md:flex text-sm font-normal">
+                <li class="py-2 px-6">PRODUCTS</li>
+                <li class="py-2 px-6">USER GUIDES</li>
+                <li class="py-2 px-6">SOLUTIONS</li>
+                <li class="py-2 px-6">APPAREL</li>
+                <li class="py-2 px-6">SUPPORT</li>
+            </ul>
+            <img class="h-7 w-7 items-center" src="./images/search.svg" alt="">
+        </div>
+
+    </nav>
+
+    <!-- Section 1 -->
+    <section class="bg-bgone bg-black">
+        <div class="container mr-12 h-auto lg:h-[700px] w-full">
+            <div class="w-2/4">
+                <div>
+                    <img src="./images/banner-1-image.svg">
+                </div>
+                <div>
+                    <h4>The Revolution Is Here</h4>
+                    <p>The RØDECaster Pro II is the world's most powerful all-in-one audio solution for streamers,
+                        podcasters, musicians, and creators. Take your content to the next level.</p>
+                </div>
+                <div>
+                    <div>Learn More</div>
+                    <div>BUY NOW</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section 2 -->
+    <!-- Section 3 -->
+    <!-- Section 4 -->
+    <!-- Section 5 -->
+    <!-- Section 6 -->
+</body>
+
+</html>
