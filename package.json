@@ -1,0 +1,25 @@
+{
+  "name": "rode-clone",
+  "version": "1.0.0",
+  "description": "This site is a clone of Rode.com",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./style.css --watch",
+    "prettier": "npx prettier --write **/*.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Steevel/Tailwind-Rode-Clone.git"
+  },
+  "keywords": [],
+  "author": "Steevel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Steevel/Tailwind-Rode-Clone/issues"
+  },
+  "homepage": "https://github.com/Steevel/Tailwind-Rode-Clone#readme",
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13"
+  }
+}
